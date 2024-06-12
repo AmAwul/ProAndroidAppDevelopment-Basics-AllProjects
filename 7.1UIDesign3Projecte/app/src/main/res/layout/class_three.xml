@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#63673AB7">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/pro_img"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/me" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/gradeant_hed"
+                app:layout_constraintBottom_toBottomOf="@+id/pro_img"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="The Correct Way to Request Privacy Policy Consent"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+                app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:text="In order for users to give consent, they must be aware of what"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/pro_img"
+                app:layout_constraintEnd_toStartOf="@+id/iv_fav"
+                app:layout_constraintStart_toEndOf="@+id/guidelineLeft" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:id="@+id/iv_fav"
+                android:tint="#fff"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+                app:srcCompat="@drawable/baseline_24"
+                app:layout_constraintBottom_toBottomOf="@+id/pro_img"
+                android:layout_height="50dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="50dp"
+                android:id="@+id/iv_user"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@+id/pro_img"
+                app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+                app:srcCompat="@drawable/me"
+                android:layout_height="50dp"
+                android:adjustViewBounds="true"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Md Abdul Awul"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_user"
+                app:layout_constraintStart_toEndOf="@+id/iv_user"
+                app:layout_constraintTop_toTopOf="@+id/iv_user" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_comunt"
+                tools:text="14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_commant"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+                app:layout_constraintTop_toTopOf="@+id/iv_commant" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_content"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Checkboxes are an effective way to both alert users to the existence of your Privacy Policy and give them a way to actively consent to your data practices.  As regulators and consumers raise their expectations for privacy, they now demand clearly defined consent.  Gone are the days when a Privacy Policy link in the footer was enough to satisfy privacy law and consumers. Not too long ago, a simple blanket statement such as &quot;By using this website you are agreeing to our Privacy Policy&quot; could be used to assume the consent of any website visitors that submitted personal information to a business.  This is no longer the case.  Using a checkbox means a user must take an action and click to show that they agree to your Privacy Policy. It also provides you a way to capture and record their consent in case your users or regulators ever ask questions about your data practices.  If you fall under the jurisdiction of the EU's General Data Protection Regulation (GDPR) or the California Consumer Privacy Act (CCPA and CPRA amendments), then you are required in certain circumstances to obtain consent.  The GDPR specifically states that valid consent must be:      Freely given     Verified using a clear, affirmative action     Informed     Specific     Unambiguous  While there are other allowable legal bases for processing consumer data under the GDPR (such as fulfilling a contract), specific consent will be required if you wish to use customer data for things like marketing analysis or personalized advertising. If each of your users specifically agrees to the terms of your Privacy Policy, that consent will extend to include the data processing practices that are described therein.  These laws are only the beginning. Bills across the United States and the world are increasingly requiring sophisticated affirmative consent from data processors.  While the GDPR applies to processing the data of consumers that live in the EU, following its regulations can help to ensure sufficient privacy practices for customer relationships in any part of the world.  No matter where in the world you or your users are located, obtaining explicit consent for your Privacy Policy could provide the following legal benefits in any market:      To ensure, without a shadow of a doubt, that consumers were given every opportunity to read and understand the Privacy Policy before submitting personal information     To keep clear records indicating that each customer saw the Privacy Policy and agreed to it of their own free will     To avoid privacy disputes in which a consumer claims that they did not see or did not know about the Privacy Policy     To overturn claims from users they did not understand how your company was using their personal information  Additionally, checkboxes make your current Privacy Policy enforceable. A user will have a difficult time proving he didn't agree to your privacy practices when he clearly clicked a box stating that he agrees."
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+                app:layout_constraintStart_toEndOf="@+id/guidelineLeft"
+                app:layout_constraintTop_toBottomOf="@+id/iv_user" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="2 hours ago"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+                app:layout_constraintEnd_toStartOf="@+id/iv_commant"
+                app:layout_constraintTop_toTopOf="@+id/tv_name" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_commant"
+                android:layout_width="30dp"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_time"
+                app:layout_constraintTop_toTopOf="@+id/tv_time"
+                app:layout_constraintEnd_toStartOf="@+id/tv_comunt"
+                app:srcCompat="@drawable/comment_24"
+                android:layout_height="30dp"/>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="20dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
