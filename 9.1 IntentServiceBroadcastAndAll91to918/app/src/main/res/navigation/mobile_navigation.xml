@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.developer_awul2.intentservicebroadcastandall91to918.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_intentFragment"
+            app:destination="@id/intentFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_serviceFragment"
+            app:destination="@id/serviceFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_foregroundFragment"
+            app:destination="@id/foregroundFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_contentProviderFragment"
+            app:destination="@id/contentProviderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/intentFragment"
+        android:name="com.developer_awul2.intentservicebroadcastandall91to918.IntentFragment"
+        android:label="fragment_intent"
+        tools:layout="@layout/fragment_intent" >
+        <action
+            android:id="@+id/action_intentFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.developer_awul2.intentservicebroadcastandall91to918.ServiceFragment"
+        android:label="fragment_service"
+        tools:layout="@layout/fragment_service" >
+        <action
+            android:id="@+id/action_serviceFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/foregroundFragment"
+        android:name="com.developer_awul2.intentservicebroadcastandall91to918.ForegroundFragment"
+        android:label="fragment_foreground"
+        tools:layout="@layout/fragment_foreground" >
+        <action
+            android:id="@+id/action_foregroundFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/contentProviderFragment"
+        android:name="com.developer_awul2.intentservicebroadcastandall91to918.ContentProviderFragment"
+        android:label="fragment_content_provider"
+        tools:layout="@layout/fragment_content_provider" >
+        <action
+            android:id="@+id/action_contentProviderFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+</navigation>
