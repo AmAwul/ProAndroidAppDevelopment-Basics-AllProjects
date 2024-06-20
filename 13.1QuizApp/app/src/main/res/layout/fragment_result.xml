@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgcok"
+    tools:context=".fragment.ResultFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_heding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AEFBBEBE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Your Exam Result...!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_qqt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#AEFBBEBE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Total Questions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_total_mcq"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heding" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_total_mcq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#AEFBBEBE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_qqt"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heding" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#AEFBBEBE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Correctly Ans :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_right_ans"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qqt" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_right_ans"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#AEFBBEBE"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_right"
+        app:layout_constraintTop_toBottomOf="@+id/tv_qqt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
